@@ -3,13 +3,13 @@ header {
 }
 
 footer {
-  padding: 10px;
+  padding: 20px 10px;
   font-size: 12px;
   text-align: center;
 }
 
 main {
-  padding: 10px;
+  padding: 20px;
 }
 
 hr {
@@ -62,4 +62,40 @@ a {
   margin-left: 10px;
   background-color: #e3aadd;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.weather-app-city {
+  font-size: 38px;
+  line-height: 48px;
+  margin: 0;
+}
+
+.weather-app-details {
+  line-height: 25px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.weather-app-details strong {
+  color: #da20c7;
+}
+
+.weather-app-temperature {
+  display: flex;
+}
+
+.current-temperature {
+  font-size: 88px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.weather-app-icon {
+  font-size: 44px;
+  margin-top: 22px;
+}
+
+.weather-app-degree {
+  font-size: 28px;
+  margin-top: 10px;
 }
