@@ -9,22 +9,28 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a City"
             required
             autofocus
             class="search-form-input"
+            id="search-form-input"
           />
-          <input type="submit" value="search" class="search-button" />
+          <input
+            type="submit"
+            value="search"
+            class="search-button"
+            id="search-button"
+          />
         </form>
       </header>
       <hr />
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Mae Sot</h1>
+            <h1 class="weather-app-city" id="weather-app-city">Mae Sot</h1>
             <p class="weather-app-details">
               Saturday 0:02, clear sky <br />Humidity:
               <strong>74%,</strong> Wind: <strong>1.54km/h</strong>
@@ -58,5 +64,6 @@
         >
       </footer>
     </div>
+    <script src="cottoncandy.js"></script>
   </body>
 </html>
