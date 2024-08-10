@@ -1,3 +1,23 @@
+header {
+  padding: 10px;
+}
+
+footer {
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+hr {
+  color: #fff;
+}
+
+a {
+  font-weight: 900;
+  color: blueviolet;
+  text-decoration: none;
+}
+
 .weather-app {
   background-image: url(https://wi.wallpapertip.com/wsimgs/96-966946_cotton-candy-wallpaper.jpg);
   background-repeat: no-repeat;
@@ -5,10 +25,32 @@
   background-attachment: fixed;
   background-size: cover;
   border-radius: 10px;
-  max-width: 800px;
+  max-width: 600px;
   padding: 30px;
   margin: 100px auto;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  opacity: 0.8;
+}
+
+.search-form-input {
+  background-color: #c8a8e9;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  padding: 10px;
+  font-size: 15px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.search-button {
+  width: 16%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: #e3aadd;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
