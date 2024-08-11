@@ -9,13 +9,38 @@ function refreshWeather(response) {
   let humidity = response.data.temperature.humidity;
   let windElement = document.querySelector("#wind");
   let wind = response.data.wind.speed;
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
+  console.log(date);
 
+  timeElement.innerHTML = formatDate(date);
   windElement.innerHTML = wind;
   humidityData.innerHTML = humidity;
   h1.innerHTML = city;
   condition.innerHTML = cloud;
   temperature.innerHTML = Math.round(temperatureElement);
   console.log(response);
+}
+
+function formatDate(date) {
+  let days = [
+    "'Sunday",
+    "Monday",
+    "Thueday",
+    "Wednesday",
+    "Thusday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  let minute = date.getMinutes();
+  let hour = date.getHours();
+
+  if (minute < 10) {
+    minute = `0${minute}`;
+  }
+
+  return `${day},${hour}:${minute}`;
 }
 
 function getCity(city) {
