@@ -108,8 +108,8 @@ a {
 }
 
 .weather-app-icon {
-  font-size: 44px;
-  margin-top: 22px;
+  width: 99px;
+
   transition: all 200ms ease-in-out;
 }
 
