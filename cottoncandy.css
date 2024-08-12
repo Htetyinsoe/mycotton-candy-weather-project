@@ -109,15 +109,36 @@ a {
 
 .weather-app-icon {
   width: 99px;
-
-  transition: all 200ms ease-in-out;
-}
-
-.weather-app-icon:hover {
-  transform: rotate(30deg);
 }
 
 .weather-app-degree {
   font-size: 28px;
   margin-top: 10px;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+}
+
+.weather-forecast-day {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.weather-forecast-icon {
+  text-align: center;
+  padding: 10px;
+}
+
+.weather-forecast-data {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-forecast-temperature {
+  padding: 0 8px;
+  color: #da20c7;
 }
