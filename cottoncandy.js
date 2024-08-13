@@ -62,6 +62,30 @@ function displayCity(event) {
   getCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHTML = "";
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="weather-forecast-date">
+            <div class="weather-forecast-day">${day}</div>
+            <div class="weather-forecast-icon">⛅</div>
+            <div class="weather-forecast-data">
+              <div class="weather-forecast-temperature">
+                <strong>37°</strong>
+              </div>
+              <div class="weather-forecast-temperature">23°</div>
+            </div>
+          </div>`;
+  });
+
+  let forecastElement = document.querySelector("#weather-forecast");
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", displayCity);
+
 getCity("Mae Sot");
+displayForecast();
