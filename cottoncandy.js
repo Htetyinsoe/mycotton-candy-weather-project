@@ -25,6 +25,8 @@ function refreshWeather(response) {
                 src="${response.data.condition.icon_url}"
                 class="weather-app-icon"
               />`;
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -62,7 +64,13 @@ function displayCity(event) {
   getCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "7fc062ate0o7d407f4902a3f2bcc6bac";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
   let forecastHTML = "";
   days.forEach(function (day) {
@@ -88,4 +96,3 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", displayCity);
 
 getCity("Mae Sot");
-displayForecast();
