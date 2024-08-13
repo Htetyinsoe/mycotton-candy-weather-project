@@ -128,8 +128,10 @@ a {
 }
 
 .weather-forecast-icon {
-  text-align: center;
-  padding: 10px;
+  display: block;
+  margin: 0 auto;
+
+  width: 100%;
 }
 
 .weather-forecast-data {
